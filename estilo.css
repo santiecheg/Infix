@@ -1,0 +1,188 @@
+*{
+    border:0px;
+    margin:0px;
+}
+body{
+    background-image:url("./Multimedia/code-matrix\ \(1\).gif");
+    background-size:contain;
+    background-position: center;
+}
+/*header*/
+header {
+    background-color: orange;
+    padding:1rem;
+    margin:1rem auto;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    height: auto;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.logo_titulo {
+    font-size: 2.4rem;
+    font-family: roboto;
+    font-weight: 600
+}
+.logo_subtitulo {
+    font-size: 1.2rem;
+    color: rgb(127, 164, 233);
+}
+.logo_imagen{
+    width: 50px
+}
+.estiloNav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.estiloNav a{
+        text-decoration: none;        
+        padding: 10px;    
+        color:rgb(127, 164, 233);        
+    }
+.estiloLista {
+    margin:10px;
+    display: inline-flex;
+    justify-content: right;
+    font-size:x-large;
+ }
+ .estiloNav ul {
+    position: relative;
+    display: none;
+ }
+.estiloNav ul li {
+    padding: 10px;
+    display: block;
+    width: fit-content;
+    border: none;
+ }
+
+/*Main*/
+.tituloPrincipal{
+    text-align: center;
+    color:goldenrod;
+    background-color: black;
+}
+.section {
+    background-color: black;
+    margin: 2rem auto;
+    border: 1rem;
+    padding: 1rem;    
+}
+.sectionTitulo{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: whitesmoke
+}
+.sectionCuerpo {
+    padding: 1rem;
+    display: flex;
+    border: solid 2px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(127, 178, 219);
+    border-radius: 15px;
+}
+.sectionCuerpo--2 {
+    padding: 1rem;
+    border: solid 2px;    
+    align-items: center;
+    background-color: rgb(127, 178, 219);
+    border-radius: 15px;
+    display: block;
+}
+.foto{
+    margin: 1rem;
+    width: 40%
+}
+.video{
+    margin: 2px;
+    width: 70%;
+}
+.registro {
+    margin-top: 1rem;
+    text-align: center;
+}
+.registro a {
+    font-weight: 600;
+    text-decoration: none;
+    color: orange;
+    font-size: 100%;
+}
+.registro a:hover{
+    color:green
+}
+.tablaNote {
+    overflow:scroll;
+    align-items: center;
+    border:solid 1px black;
+    width: 90%;
+    font-size: 30px;
+}
+
+/*footer*/
+.footer {
+    margin:3rem;
+}
+.contactarOperador {
+    background-color: white;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    border: solid 3px whitesmoke;
+    border-radius: 20px;
+    color: orangered;
+    margin-bottom: 1rem;
+}
+.contactarOperadorBoton {
+
+    font-size: 2rem;
+    text-decoration: none;
+    color: blue;
+    cursor: pointer
+}
+.contactarOperadorBoton:hover{
+    color:green;
+}
+.info{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+.infoAtencion h3{
+    color:orangered
+}
+
+.redesBoton{
+    display: block;
+    font-size: 50px;
+    color: orange;
+}
+.fa-whatsapp{
+    text-decoration: none;
+    background-color: #3ec34f;
+    padding: 0.5rem;
+    color: white;
+    font-size: 3rem;
+    border-radius: 50%;
+    position:fixed;
+    bottom: 5%;
+    right: 5%;
+    box-shadow: 2px black;
+    border: solid 1px white;
+}
+.copyright{
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: 600;
+    margin: 1rem;
+text-align: center;
+color: whitesmoke;
+}

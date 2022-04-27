@@ -1,45 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Estilo.css">
-    <link rel="shortcut icon" href="../Multimedia/61bb3e3d-b102-3767-8732-ed415fb3122e.ico">
-    <title>Registro</title>
-</head>
-<body>
-    <header class="fondoHeader">
-        <div>
-            <h1 >E Repair</h1>
-            <h2 >Soluciones informaticas</h2>
-            <img src="../Multimedia/61bb3e3d-b102-3767-8732-ed415fb3122e.png"
-             alt="">
-        </div>    
-        <nav>
-            <ul><li class="boton"><a href="../index.html">Inicio</a></li>
-                <li><a href="operador.html">Operador</a></li>
-                <li class="plataforma"><a href="plataforma.html">Plataforma</a></li>
-                <li><a href="products.html">Productos</a>
-                    <ul>
-                        <li><a href="">Componentes PC</a></li>
-                        <li><a href="">Equipos informáticos</a></li>
-                    </ul>
-                </li>                
-                <li><a href="registro.html">Registro</a></li>
-                <li><a href="services.html">Servicios</a></li>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../Multimedia/61bb3e3d-b102-3767-8732-ed415fb3122e.png">
+        <link rel="stylesheet" href="../Estilo.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/c7804316bc.js" crossorigin="anonymous"></script>
+        
+        <title>Registro</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <div class="logo_titulo">
+                    <h2 class="logo_titulo">E-Repair <br></h2>
+                    <h2 class="logo_subtitulo">Soluciones Informaticas</h2>
+                </div>
+                    <img src="../Multimedia/61bb3e3d-b102-3767-8732-ed415fb3122e.png"alt="" class="logo_imagen">            
+            </div>
+        <nav> 
+            <ul class="estiloNav"><li class="estiloLista"><a href="../index.html">Inicio</a></li>
+                <li class="estiloLista"><a href="operador.html">Operador</a></li>
+                <li class="estiloLista"><a href="plataforma.html">Plataforma</a></li>
+                <li class="estiloLista menu"><a href="products.html">Productos</a></li>                  
+                <li class="estiloLista"><a href="registro.html">Registro</a></li>
+                <li class="estiloLista"><a href="services.html">Servicios</a></li>
             </ul>
-        </nav> 
+        </nav>
     </header>
     <main>
-        <h2 align="center">Registro</h2>
-        <section>
-            <article>
-                <fieldset>
-                    <legend><strong>formulario de registro
-                    </strong></legend>     
-
-                    <form action="enviar.php" method="post" enctype="text/plain">
+        <section>  
+            <div class="tituloPrincipal">
+                <h1>Registro</h1>
+            </div>
+            <div class="section">
+                    <div class="sectionTitulo">
+                        <h2>formulario de registro</h2>
+                    </div>
+                    <div class="sectionCuerpo">
+                        <form action="enviar.php" method="post" enctype="text/plain">
 
                         <label>Nombre <input type="text" placeholder="Ej: Juan">
                         </label>
@@ -82,43 +84,42 @@
                         <input type="button" value="Descagar formulario">
                     
                     </form>
-                </fieldset>
-            </article>
-        </section>
+                    </div>
+            </div>
+            </section>
     </main>
     <footer>
-        <fieldset>
-             <fieldset>
-                 <p align="center">
-                     ¿Necesitas ayuda?
-                     <br><a href="operador.html">Contactar con un operador</a>
-                 </p>
-             </fieldset> 
-                <div align="justify">
-                    <p><Strong>
-                        Atencion al Cliente
-                     </Strong>
-                    <br> Atencion telefonica: 5555-555-5565
-                     Consultas@e-repair.com.ar
-                    <br><strong> Horarios de Atencion</strong>
-                     Lun. a Dom. de 9:00 a 9:15 
+        <div class="footer">
+            <div class="contactarOperador">
+                 <p>¿Necesitas ayuda?</p>
+                 <a href="operador.html" class="contactarOperadorBoton">Contactar con un operador</a>
+            </div>
+            <div class="info">
+                <div class="infoAtencion">
+                        <h3>Atencion al Cliente </h3>
+                        <p> Atencion telefonica: 5555-555-5565 <br>
+                        Consultas@e-repair.com.ar</p>
+                
+                        <h3>Horarios de Atencion</h3>
+                        <p>Lun. a Dom. de 9:00 a 9:15 </p>
                 </div>
-                <div align="center">
-                    <p><Strong>
-                        Encontranos en nuestras redes sociales
-                     </Strong>
-                    <br><a href="https://www.instagram.com/coderhouse/?hl=es"><strong>Instagram</strong>                         
-                    </a> 
-                    <a href="https://es-la.facebook.com/zuck"><strong>Facebook</strong>                         
-                    </a>                    
-                    <br><a href="https://twitter.com/bitcoinar"><strong>Twitter</strong>                         
-                    </a>
-                    <a href="https://www.youtube.com/c/SKTT1Faker_official"><strong>Youtube</strong>                        
-                    </a>   
-                    <br>Copyright® E-Repair - 2022
-                </div>                      
-        </fieldset>    
-    </footer>     
+            
+                <div class="redes">
+                    <p>Seguinos en nuestras redes sociales</p>
+                    <a href="https://www.instagram.com/coderhouse/?hl=es"class="redesBoton"><i class="fa-brands fa-instagram-square"></i></a> 
+
+                      
+                </div> 
+            </div>    
+            <div class="copyright">
+                <p>Copyright® E-Repair 2022</p>            
+            </div>    
+            <div >
+                <a href="https://wa.me/543517588553?text=Hola,%20 tengo%20una%20consulta%20"><i class="fa-brands fa-whatsapp"></i></a>
+                
+            </div>
+        </div>                                
+    </footer>      
     
 </body>
 </html>
