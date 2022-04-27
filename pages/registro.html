@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Estilo.css">
     <link rel="shortcut icon" href="../Multimedia/61bb3e3d-b102-3767-8732-ed415fb3122e.ico">
-    <title>Servicios</title>
+    <title>Registro</title>
 </head>
 <body>
-    <header>
+    <header class="fondoHeader">
         <div>
             <h1 >E Repair</h1>
             <h2 >Soluciones informaticas</h2>
@@ -32,50 +32,59 @@
         </nav> 
     </header>
     <main>
-        <h2 align="center">SERVICIOS</h2> 
+        <h2 align="center">Registro</h2>
         <section>
-            <article> 
-                <h3 align="center">Atencion virtual</h4> 
-                <fieldset>
-                    <legend align="right">
-                        <strong>Atención en linea las 24 hs.</strong>
-                    </legend>
-                    <p align="left">
-                        Contacte mediante el canal de chat con los mejores operadores en linea para que cualquier tipo de duda o inquietud que usted tenga pueda ser escuchada y resuelta en la brevedad.                        
-                    </p>
-                    <img width="450px" height="300px" src="../Multimedia/call-center-CRM-estrategia.jpg" alt="">
-                    <img width="450px" height="350px" src="../Multimedia/Virtual meet.jpg">
-                    
-                <fieldset>
-                            <p align="center">
-                                <a href="operador.html">Contactar con un operador en linea                                   
-                                </a>
-                            </p>    
-                </fieldset>
-            </article>
             <article>
                 <fieldset>
-                    <legend align="center"><strong>
-                        Diagnostico Inteligente</strong></legend>
-                    <p align="justify"> 
-                        La tecnologia mas novedosa hicieron posible que los operadores de "E Repair" pudieran desarrollar una plataforma digital que detecta. soluciona y previene errores en tu computador con solo un click. <br>
-                        Enterate el estado completo de tu pc gratis<br>               
-                    </p>
-                    <p align="right">
-                        <video height="220" width="400" controls autoplay loop>
-                            <source src="../Multimedia/video inicio.mp4">
-                        </video>
-                    </p>   
-                    <p>                       
-                        Esta opcion solo posible utilizar mediante la plataforma, esto quiere decir que deberas 
-                        <a href="registro.html">registrarte</a>
-                        si no posees cuenta aun              
-                    </p> 
-                        <input type="button" value="Analizar ahora">
-                        <input type="button" value="registrarse">   
+                    <legend><strong>formulario de registro
+                    </strong></legend>     
+
+                    <form action="enviar.php" method="post" enctype="text/plain">
+
+                        <label>Nombre <input type="text" placeholder="Ej: Juan">
+                        </label>
+                        <label>Apellido <input type="text" placeholder="Ej: Perez"                    
+                        ></label> <br>
+                        <label>Nombre de Usuario <br><input type="text" placeholder="Ej: JuanP123">
+                        </label>
+                        <label><input type="text" placeholder="Repita su nombre de Usuario">               
+                        </label><br>
+                        <label>Correo electronico <br><input type="text" placeholder="Ej: JuanP123@google.com">
+                        </label>
+                        <label><input type="text" placeholder="Repita su correo electronico">                   
+                        </label> <br>
+                        <label>Contraseña <br><input type="password" placeholder="Ej: PuanJerez312">
+                        </label>
+                        <label><input type="password" placeholder="Repita su contraseña">                   
+                        </label> 
+                    
+                        <br><br><br><p>Indique su genero</p>
+                        <input type="radio" name="genero">
+                        <label for="">Masculino</label>
+                        <input type="radio" name="genero">
+                        <label for="">Femenino</label>
+                        <input type="radio" name="genero">
+                        <label for="">No especifica</label><br>
+
+                        <br><br><p>Año de Nacimiento</p>
+                        <select name="letra" id="letra"> 
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                        </select>
+
+                        <br><br><br><input type="checkbox"><label for="">aceptar terminos y condiciones</label>
+                        <br><input type="submit" value="REGISTRARSE">
+                        <input type="reset" value="Borrar">
+                        <input type="button" value="Descagar formulario">
+                    
+                    </form>
                 </fieldset>
-            </article>       
-        </section>                                            
+            </article>
+        </section>
     </main>
     <footer>
         <fieldset>
@@ -110,6 +119,6 @@
                 </div>                      
         </fieldset>    
     </footer>     
-
+    
 </body>
 </html>

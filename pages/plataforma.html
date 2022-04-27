@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online</title>
     <link rel="stylesheet" href="../Estilo.css">
     <link rel="shortcut icon" href="../Multimedia/61bb3e3d-b102-3767-8732-ed415fb3122e.ico">
-    <title>Servicios</title>
 </head>
 <body>
-    <header>
+    <header class="fondoHeader">
         <div>
             <h1 >E Repair</h1>
             <h2 >Soluciones informaticas</h2>
             <img src="../Multimedia/61bb3e3d-b102-3767-8732-ed415fb3122e.png"
              alt="">
-        </div>    
+        </div>     
         <nav>
             <ul><li class="boton"><a href="../index.html">Inicio</a></li>
                 <li><a href="operador.html">Operador</a></li>
@@ -32,51 +32,36 @@
         </nav> 
     </header>
     <main>
-        <h2 align="center">SERVICIOS</h2> 
         <section>
-            <article> 
-                <h3 align="center">Atencion virtual</h4> 
-                <fieldset>
-                    <legend align="right">
-                        <strong>Atención en linea las 24 hs.</strong>
-                    </legend>
-                    <p align="left">
-                        Contacte mediante el canal de chat con los mejores operadores en linea para que cualquier tipo de duda o inquietud que usted tenga pueda ser escuchada y resuelta en la brevedad.                        
+            <article>
+                <fieldset align="center">
+                    <legend><strong>
+                        E-Repair Online
+                    </strong></legend>
+                    <form action="enviar.php" method="post" enctype="text/plain">
+                        <label >Nombre de usuario                         
+                        </label>
+                            <br><input type="text" placeholder="Nombre de Usuario">
+                        <label> 
+                            <br><input type="password" placeholder="Contraseña">
+                        </label>
+                            <br><input type="submit" value="Iniciar Sesion">
+                            <input type="button" value="Olvide mis datos">
+                    </form>
+                    <br>
+                    <p align="center">
+                        No tienes cuenta?
+                        <br>Registrate gratis y accede a todos los beneficios de la plataforma E-Repair
+                        <br><a href="registro.html">Registrarme</a>
+
                     </p>
-                    <img width="450px" height="300px" src="../Multimedia/call-center-CRM-estrategia.jpg" alt="">
-                    <img width="450px" height="350px" src="../Multimedia/Virtual meet.jpg">
-                    
-                <fieldset>
-                            <p align="center">
-                                <a href="operador.html">Contactar con un operador en linea                                   
-                                </a>
-                            </p>    
+
+
                 </fieldset>
             </article>
-            <article>
-                <fieldset>
-                    <legend align="center"><strong>
-                        Diagnostico Inteligente</strong></legend>
-                    <p align="justify"> 
-                        La tecnologia mas novedosa hicieron posible que los operadores de "E Repair" pudieran desarrollar una plataforma digital que detecta. soluciona y previene errores en tu computador con solo un click. <br>
-                        Enterate el estado completo de tu pc gratis<br>               
-                    </p>
-                    <p align="right">
-                        <video height="220" width="400" controls autoplay loop>
-                            <source src="../Multimedia/video inicio.mp4">
-                        </video>
-                    </p>   
-                    <p>                       
-                        Esta opcion solo posible utilizar mediante la plataforma, esto quiere decir que deberas 
-                        <a href="registro.html">registrarte</a>
-                        si no posees cuenta aun              
-                    </p> 
-                        <input type="button" value="Analizar ahora">
-                        <input type="button" value="registrarse">   
-                </fieldset>
-            </article>       
-        </section>                                            
-    </main>
+        </section>
+        
+    </main>  
     <footer>
         <fieldset>
              <fieldset>
@@ -110,6 +95,6 @@
                 </div>                      
         </fieldset>    
     </footer>     
-
+  
 </body>
 </html>

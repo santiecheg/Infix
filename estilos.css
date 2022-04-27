@@ -1,0 +1,113 @@
+body {
+    padding:0px;
+    margin: 0px;
+background-image:url("./Multimedia/code-matrix\ \(1\).gif");    
+}
+
+a {text-decoration:none;}
+header {
+    position: absolute;
+    border:solid 2px blueviolet;
+    background-color:rgb(127, 178, 219);
+    position:static;
+    top:0px;
+   	bottom: 70px;
+	left: auto;  
+}
+nav a{
+    overflow: hidden;
+    text-decoration: none;
+    border:solid 2px black;
+    border-style:dotted;
+    border-radius: 100%;
+    padding: 6px;
+
+    color:whitesmoke;
+    
+}
+
+nav  ul {
+    list-style:none;
+    font-size:0;
+ }
+nav li {
+    display: inline-block;
+    width: 15%;
+    position:relative;
+    font-size:x-large;
+ }
+
+nav ul ul {
+    position: relative;
+    display: none;
+ }
+nav ul ul li {
+    padding: 15px;
+    display: block;
+    width:max-content;
+    border:none;
+ }
+nav ul ul li a {color: white;}
+nav ul li:hover ul {
+     position: absolute;
+    display:block;
+    background-color: rgb(127, 178, 219);
+    border:solid 2px black;
+ }
+
+section { 
+    display:block;
+    background-color: orange;
+    border: solid 3px;
+    width: 100%;     
+    height: 100%;
+}
+section img {display:inline;}
+h1 {
+    font-family: 'Roboto';
+    font-size: 100px;
+    display:inline;
+}
+div img{
+    height: 40px;
+    width: 50px;
+    display:inline;
+    }
+nav {display: inline;
+}
+
+footer{
+    border:dashed 1px black;
+    padding:4px;
+}
+
+.contactarOperador {
+    display:block;
+    border: solid 3px black;
+    color: rgb(127, 178, 219);
+    background-color: white;
+}
+.contactarOperador p {
+    color:black;
+    font-size: 15px;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.atencionAlCliente h3 {
+    border:0px;
+    padding: 0px;
+    color: orange;
+    text-align: center;
+    font-style: inherit;
+}
+.atencionAlCliente p {
+    color:white;
+    text-align: center;    
+}
+#productos {
+    background-color: blueviolet;
+}
+.redes {
+    color:red;
+}
