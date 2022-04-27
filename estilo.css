@@ -3,73 +3,85 @@
     margin:0px;
 }
 body{
-    background-image:url("./Multimedia/code-matrix\ \(1\).gif");
-    background-size:contain;
+    background-image:url("./Multimedia/gala888.jpg");
+    background-size: cover;
     background-position: center;
+}
+.grilla {
+    grid-template-columns: 10% 80% 20%;
 }
 /*header*/
 header {
-    background-color: orange;
-    padding:1rem;
-    margin:1rem auto;
-    margin-top: 0px;
+    width: 100%;
+    background-color: rgba(136, 114, 114, 0.24);
+    padding: 0.5em auto;    
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
 }
 .logo {
-    height: auto;
-    display: inline-flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    display:inline-flex;
+    justify-content: start;
+}
+.block {
+    margin:0.5em;
+    padding:0.5em;
 }
 .logo_titulo {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-family: roboto;
-    font-weight: 600
+    font-weight: 600;
+    color:green;
 }
 .logo_subtitulo {
     font-size: 1.2rem;
     color: rgb(127, 164, 233);
 }
+.block{
+    display:block;
+}
 .logo_imagen{
-    width: 50px
+    width: 50px;    
 }
-.estiloNav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
+
 .estiloNav a{
         text-decoration: none;        
-        padding: 10px;    
-        color:rgb(127, 164, 233);        
+        padding: 1%;    
+        color:#3ec34f;
+        text-shadow:rgb(66,201,32) 2px;  
+        font-weight: 900;     
     }
 .estiloLista {
-    margin:10px;
+    padding:0.3em;
+    margin:0.5em;
     display: inline-flex;
     justify-content: right;
-    font-size:x-large;
+    font-size: 1.4em;
+    
  }
- .estiloNav ul {
-    position: relative;
-    display: none;
- }
+
 .estiloNav ul li {
-    padding: 10px;
+    padding: 3%;
     display: block;
     width: fit-content;
     border: none;
  }
 
 /*Main*/
-.tituloPrincipal{
+.Principal{
     text-align: center;
-    color:goldenrod;
-    background-color: black;
+    background-color: transparent;
+    padding:20px;
+    margin:10px;
+    width: fit-content;
+}
+.Principal h1 {
+    color: rgb(66,201,32);
+    text-shadow: greenyellow 15px;
 }
 .section {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     margin: 2rem auto;
     border: 1rem;
     padding: 1rem;    
@@ -86,20 +98,24 @@ header {
     border: solid 2px;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(127, 178, 219);
+    background-color: rgba(127, 164, 233);
     border-radius: 15px;
+    font-weight: 600;
+    
 }
+
+
 .sectionCuerpo--2 {
     padding: 1rem;
     border: solid 2px;    
     align-items: center;
-    background-color: rgb(127, 178, 219);
+    background-color: rgba(127, 164, 233);
     border-radius: 15px;
     display: block;
 }
 .foto{
     margin: 1rem;
-    width: 40%
+    width: 85%;
 }
 .video{
     margin: 2px;
@@ -157,7 +173,7 @@ header {
     margin-bottom: 1rem;
 }
 .infoAtencion h3{
-    color:orangered
+    color:orangered;
 }
 
 .redesBoton{
@@ -184,5 +200,76 @@ header {
     font-weight: 600;
     margin: 1rem;
 text-align: center;
-color: whitesmoke;
+color: whitesmoke;}
+
+@media only screen and (max-width: 1200px){
+    #tablaNote{
+        display:block;
+    }
 }
+
+@media only screen and (max-width: 1024px) {
+
+    .logo {
+        display:inline-flex;
+    }
+
+    .estiloNav {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1em 1em;
+        grid-gap: 1em;
+        align-self: center;
+        justify-items: center;
+        align-items: center;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .estiloNav {
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1em 1em;
+            grid-gap: 1em;
+            align-self: center;
+            justify-items: center;
+            align-items: center;
+            }
+            
+            
+    }
+
+
+@media only screen and (max-width:600px){
+        
+        .estiloNav     {
+            padding-left: 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-items: start;
+            grid-gap: 0.4em;
+        }
+    
+        .sectionCuerpo {
+            display:block;
+        }
+
+        @media only screen and (max-width:479px){
+            
+            .estiloNav {
+                display:none;
+            }
+            header {
+                display:block;
+            }
+            .block {
+                align-items: center;
+                display: grid;
+                justify-content: center;
+                align-content: stretch;
+                justify-items: center;
+            }
+            
+        }
