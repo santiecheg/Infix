@@ -3,6 +3,7 @@
     margin:0px;
 }
 body{
+    
     background-image:url("./Multimedia/gala888.jpg");
     background-size: cover;
     background-position: center;
@@ -40,7 +41,28 @@ header {
 }
 .block{
     display:block;
+    transition: all 0.2;
 }
+.block:hover {
+    margin: 0.7em;
+    padding:0.7em;
+    transition: 0.5s;
+}
+.block:hover .logo_subtitulo {
+        color:rgb(66,201,32);
+        transform: scale(1.2,1.2);
+        transition: all 4s;
+}
+.block:hover .logo_imagen {
+    transform: scale(1.2,1.2);
+    transition: all 3s;
+}
+.block:hover .logo_titulo {
+    transform: scale(1.3,1.3);
+    color:rgb(127, 164, 233);
+    transition: all 3s;
+}
+
 .logo_imagen{
     width: 50px;    
 }
@@ -50,16 +72,21 @@ header {
         padding: 1%;    
         color:#3ec34f;
         text-shadow:rgb(66,201,32) 2px;  
-        font-weight: 900;     
+        font-weight: 900;    
+        transition:all 0.3s; 
     }
 .estiloLista {
     padding:0.3em;
     margin:0.5em;
     display: inline-flex;
     justify-content: right;
-    font-size: 1.4em;
-    
+    font-size: 1.4em;    
  }
+.estiloNav a:hover {
+    color:rgb(127, 164, 233);
+    transform: scale(1.2,1.2);
+    transition: all 0.5;
+}
 
 .estiloNav ul li {
     padding: 3%;
@@ -186,13 +213,18 @@ header {
     background-color: #3ec34f;
     padding: 0.5rem;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     border-radius: 50%;
     position:fixed;
     bottom: 5%;
     right: 5%;
     box-shadow: 2px black;
     border: solid 1px white;
+    transition: all 0.5s;
+}
+.fa-whatsapp:hover {
+    font-size: 3rem;
+    transition: all 0.5s;
 }
 .copyright{
     font-size: 40px;
