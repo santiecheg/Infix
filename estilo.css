@@ -8,9 +8,7 @@ body{
     background-size: cover;
     background-position: center;
 }
-.grilla {
-    grid-template-columns: 10% 80% 20%;
-}
+
 /*header*/
 header {
     width: 100%;
@@ -33,7 +31,7 @@ header {
     font-size: 2rem;
     font-family: roboto;
     font-weight: 600;
-    color:green;
+    color:rgb(66,201,32);
 }
 .logo_subtitulo {
     font-size: 1.2rem;
@@ -67,33 +65,35 @@ header {
     width: 50px;    
 }
 
-.estiloNav a{
-        text-decoration: none;        
-        padding: 1%;    
-        color:#3ec34f;
-        text-shadow:rgb(66,201,32) 2px;  
-        font-weight: 900;    
-        transition:all 0.3s; 
-    }
-.estiloLista {
-    padding:0.3em;
-    margin:0.5em;
-    display: inline-flex;
-    justify-content: right;
-    font-size: 1.4em;    
- }
-.estiloNav a:hover {
+.nav-link{
+    color: rgb(66,201,32);
+}
+.navbar-toggler-icon {   
+    background-image: url(./Multimedia/ICONITO.png);
+}
+.navbar-toggler {
+    background-color: rgb(66,201,32);
+}
+
+.navbar-nav {
+    position: relative;
+    background-color: none;
+}
+.nav-link{
+    text-decoration: none;
+    padding: 10px;
+    color: #3ec34f;
+    text-shadow: rgb(66,201,32) 2px;
+    font-weight: 900;
+    transition: all 0.3s;
+    margin: 10px;
+    font-size: 1.5em;
+}            
+.nav-link:hover {
     color:rgb(127, 164, 233);
     transform: scale(1.2,1.2);
     transition: all 0.5;
 }
-
-.estiloNav ul li {
-    padding: 3%;
-    display: block;
-    width: fit-content;
-    border: none;
- }
 
 /*Main*/
 .Principal{
@@ -170,8 +170,9 @@ header {
 }
 
 /*footer*/
-.footer {
-    margin:3rem;
+.footer {   
+    padding: 2rem;
+    background-color:rgba(136, 114, 114, 0.24);
 }
 .contactarOperador {
     background-color: white;
@@ -198,6 +199,9 @@ header {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 1rem;
+}
+.redes p {
+    color:red;
 }
 .infoAtencion h3{
     color:orangered;
@@ -238,70 +242,20 @@ color: whitesmoke;}
     #tablaNote{
         display:block;
     }
-}
-
-@media only screen and (max-width: 1024px) {
-
-    .logo {
-        display:inline-flex;
-    }
-
-    .estiloNav {
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1em 1em;
-        grid-gap: 1em;
-        align-self: center;
-        justify-items: center;
-        align-items: center;
+    .nav-link {
+        font-size: 1.2;
+        padding: 1px;
+        margin: 1px;
     }
     
 }
-
-@media only screen and (max-width: 768px) {
-    .estiloNav {
-            display:grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1em 1em;
-            grid-gap: 1em;
-            align-self: center;
-            justify-items: center;
-            align-items: center;
-            }
-            
-            
-    }
-
 
 @media only screen and (max-width:600px){
         
-        .estiloNav     {
-            padding-left: 0px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            justify-items: start;
-            grid-gap: 0.4em;
-        }
-    
         .sectionCuerpo {
             display:block;
         }
-
-        @media only screen and (max-width:479px){
-            
-            .estiloNav {
-                display:none;
-            }
-            header {
-                display:block;
-            }
-            .block {
-                align-items: center;
-                display: grid;
-                justify-content: center;
-                align-content: stretch;
-                justify-items: center;
-            }
-            
+        .info {
+            display:block;
+            text-align: center;
         }
