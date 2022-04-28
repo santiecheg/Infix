@@ -94,7 +94,9 @@ header {
     transform: scale(1.2,1.2);
     transition: all 0.5;
 }
-
+#actual {
+    color:red;
+}
 /*Main*/
 .Principal{
     text-align: center;
