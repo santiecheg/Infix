@@ -168,13 +168,6 @@ h1 {
 .card{
     background-color:rgba(0, 0, 0, 0);
 }
-.sectionCuerpo--2 {
-    display:block;
-    padding: 2rem;
-    border: solid 2px;  
-    background-color: rgba(127, 164, 233, 0.411);
-    border-radius: 15px;
-}
 .foto{
     width: 100%;    
 }
@@ -190,13 +183,6 @@ h1 {
 }
 .registro a:hover{
     color:green
-}
-.tablaNote {
-    overflow:scroll;
-    align-items: center;
-    border:solid 1px black;
-    width: 90%;
-    font-size: 30px;
 }
 .construccion{
     background-image: url(./Multimedia/construccion.jpg);
