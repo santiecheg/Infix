@@ -5,8 +5,8 @@
 body{
     
     background-image:url("./Multimedia/gala888.jpg");
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+    background-position:center;
 }
 
 /*header*/
@@ -17,6 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
 
 }
 .logo {
@@ -32,6 +33,7 @@ header {
     font-family: roboto;
     font-weight: 600;
     color:rgb(66,201,32);
+    text-shadow:0 0 5px black;
 }
 .logo_subtitulo {
     font-size: 1.2rem;
@@ -73,6 +75,7 @@ header {
 }
 .navbar-toggler {
     background-color: rgb(66,201,32);
+    box-shadow:0 0 5px black;
 }
 
 .navbar-nav {
@@ -81,12 +84,10 @@ header {
 }
 .nav-link{
     text-decoration: none;
-    padding: 10px;
     color: #3ec34f;
-    text-shadow: rgb(66,201,32) 2px;
+    text-shadow: 0 0 5px black;
     font-weight: 900;
     transition: all 0.3s;
-    margin: 10px;
     font-size: 1.5em;
 }            
 .nav-link:hover {
@@ -98,7 +99,20 @@ header {
     color:red;
 }
 /*Main*/
-
+.carousel-item{
+    height: 40vh;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.carEfecto {
+    font-size:1rem;
+    background-color: rgba(245, 245, 220, 0.103);
+    text-shadow: 0 0 4px black;
+}
+#H3 {
+    font-size:2.5rem;
+}
 h1 {
     float:center;
     color: rgb(66,201,32);
@@ -107,6 +121,7 @@ h1 {
 .section {
 
     margin: 2rem auto;
+    float:center;
        
 }
 .sectionTitulo{
@@ -117,7 +132,6 @@ h1 {
     text-transform:uppercase;
 }
 .sectionCuerpo {
-    display:flex;
     padding: 1rem;
     color:rgb(66,201,32);
     background-color: rgba(0, 0, 0, 0.785);
@@ -126,11 +140,33 @@ h1 {
     text-shadow: 1px 1px black;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around;      
 }
-
-button {
-    padding: 1rem;
+.tecnologia {
+    background-image: url(./Multimedia/MOther.jpg);
+    background-position: center;
+    background-size:cover;
+    z-index: 1;
+}
+.difuminado{
+    background-color: rgba(0, 0, 0, 0.671);
+    z-index:3;
+}
+.btn-dark {
+    color: #ffc107;
+    background-color: #000000;
+    border-color: rgb(66 201 32);
+}
+.btn-dark:hover{
+    color: yellow;
+    background-color: black;
+}
+.btn-dark:visited{
+    color: yellow;
+    background-color: black;
+}
+.card{
+    background-color:rgba(0, 0, 0, 0);
 }
 .sectionCuerpo--2 {
     display:block;
@@ -140,13 +176,7 @@ button {
     border-radius: 15px;
 }
 .foto{
-    width: 70%;
-    margin: 1rem;
-    
-}
-.video{
-    margin: 2px;
-    width: 70%;
+    width: 100%;    
 }
 .registro {
     margin-top: 1rem;
@@ -168,21 +198,33 @@ button {
     width: 90%;
     font-size: 30px;
 }
-
+.construccion{
+    background-image: url(./Multimedia/construccion.jpg);
+    background-size: 50vh;
+    background-position: center;
+}
 /*footer*/
 .footer {   
     padding: 2rem;
     background-color:rgba(136, 114, 114, 0.24);
 }
 .contactarOperador {
-    background-color: white;
+    background-color: black;
     font-size: 1.5rem;
     display: block;
     text-align: center;
-    border: solid 3px whitesmoke;
+    border: double 3px whitesmoke;
     border-radius: 20px;
     color: orangered;
-    margin-bottom: 1rem;
+}
+.offcanvas {
+    color:rgb(66,201,32);
+    background-color: rgba(136, 114, 114, 0.10);
+}
+.btn-close{
+    transition: 2s;
+    transform: scale(1.2,1.2);
+    background-color: red;
 }
 .contactarOperadorBoton {
 
@@ -231,25 +273,17 @@ button {
     transition: all 0.5s;
 }
 .copyright{
-    font-size: 40px;
+    font-size: 0.6rem;
     font-style: oblique;
     font-weight: 600;
-    margin: 1rem;
+    position:sticky;
+    bottom: 0;
 text-align: center;
 color: whitesmoke;}
 
 /* MEDIAS Y DISEÑO RESPONSIVE*/
 
-
-    .sectionTitulo {
-        font-size: 40px;
-    }
-    .sectionCuerpo{
-        font-size: 25px;    
-    }
-}
-
-@media only screen and (max-width: 1200px){
+@media only screen and (min-width: 1200px){
     #tablaNote{
         display:block;
     }
@@ -257,6 +291,20 @@ color: whitesmoke;}
         font-size: 1.2;
         padding: 1px;
         margin: 1px;
+    }
+    .sectionTitulo {
+        font-size: 40px;
+    }
+    .sectionCuerpo{
+        font-size: 25px;    
+    }
+    .carEfecto {
+        font-size:2rem;
+        background-color: rgba(245, 245, 220, 0.103);
+        text-shadow: 0 0 4px black;
+    }
+    #H3 {
+        font-size:5rem;
     }
 
 }
@@ -270,3 +318,4 @@ color: whitesmoke;}
             display:block;
             text-align: center;
         }
+    }
