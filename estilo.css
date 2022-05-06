@@ -144,8 +144,7 @@ h1 {
 }
 .tecnologia {
     background-image: url(./Multimedia/MOther.jpg);
-    background-position: center;
-    background-size:cover;
+   
     z-index: 1;
 }
 .difuminado{
@@ -303,5 +302,13 @@ color: whitesmoke;}
         .info {
             display:block;
             text-align: center;
+        }
+        .carEfecto {
+            font-size:1rem;
+            background-color: rgba(245, 245, 220, 0.103);
+            text-shadow: 0 0 4px black;
+        }
+        #H3 {
+            font-size:1.4rem;
         }
     }
