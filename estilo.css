@@ -264,12 +264,6 @@ h1 {
   color: red;
 }
 
-.redesBoton {
-  display: block;
-  font-size: 50px;
-  color: rgb(66, 201, 32);
-}
-
 .fa-whatsapp {
   text-decoration: none;
   background-color: #3ec34f;
@@ -298,6 +292,55 @@ h1 {
   bottom: 0;
   text-align: center;
   color: rgb(66, 201, 32);
+}
+
+.collapse {
+  position: absolute;
+}
+
+.red--twitter {
+  background: #51aff8;
+  font-size: 40px;
+  color: black;
+}
+.red--twitter:hover {
+  background: white;
+}
+
+.red--facebook {
+  background: blue;
+  font-size: 40px;
+  color: black;
+}
+.red--facebook:hover {
+  background: white;
+}
+
+.red--linkedin {
+  background: #0076b8;
+  font-size: 40px;
+  color: black;
+}
+.red--linkedin:hover {
+  background: white;
+}
+
+.red--youtube {
+  background: red;
+  font-size: 40px;
+  color: black;
+}
+.red--youtube:hover {
+  background: white;
+}
+
+.red--instagram {
+  background: orange;
+  font-size: 40px;
+  color: black;
+}
+.red--instagram:hover {
+  background: white;
 }
 
 /* MEDIAS Y DISEÑO RESPONSIVE*/

@@ -1,153 +1,174 @@
-
 //colores
 
-$color1:rgb(66,201,32);
-$color2:rgb(127, 164,233);
-$color3:rgb(0,0,0,0.785);
-$color4:rgb(136, 114, 114, 0.24);
-$color5:red;
-//ESTILO//  
-*{
-    border:0px;
-    margin:0px;
+$color1: rgb(66, 201, 32);
+$color2: rgb(127, 164, 233);
+$color3: rgb(0, 0, 0, 0.785);
+$color4: rgb(136, 114, 114, 0.24);
+$color5: red;
+
+//ESTILO//
+* {
+    border: 0px;
+    margin: 0px;
 }
-body{
-    
-    background-image:url("./Multimedia/gala888.jpg");
-    background-size:cover;
-    background-position:center;
+
+body {
+    background-image: url("./Multimedia/gala888.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 /*header*/
 header {
     width: 100%;
     background-color: $color4;
-    padding: 0.5em auto;    
+    padding: 0.5em auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
-
 }
+
 .logo {
-    display:inline-flex;
+    display: inline-flex;
     justify-content: start;
 }
+
 .block {
-    margin:0.5em;
-    padding:0.5em;
+    margin: 0.5em;
+    padding: 0.5em;
 }
+
 .logo_titulo {
     font-size: 2rem;
     font-family: roboto;
     font-weight: 600;
-    color:$color1;
-    text-shadow:0 0 5px black;
+    color: $color1;
+    text-shadow: 0 0 5px black;
 }
+
 .logo_subtitulo {
     font-size: 1.2rem;
-    color:$color2;
+    color: $color2;
 }
-.block{
-    display:block;
+
+.block {
+    display: block;
     transition: all 0.2;
 }
+
 .block:hover {
     margin: 0.7em;
-    padding:0.7em;
+    padding: 0.7em;
     transition: 0.5s;
 }
+
 .block:hover .logo_subtitulo {
-        color:$color1;
-        transform: scale(1.2,1.2);
-        transition: all 4s;
+    color: $color1;
+    transform: scale(1.2, 1.2);
+    transition: all 4s;
 }
+
 .block:hover .logo_imagen {
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
     transition: all 3s;
 }
+
 .block:hover .logo_titulo {
-    transform: scale(1.3,1.3);
-    color:$color2;
+    transform: scale(1.3, 1.3);
+    color: $color2;
     transition: all 3s;
 }
 
-.logo_imagen{
-    width: 50px;    
+.logo_imagen {
+    width: 50px;
 }
 
-.nav-link{
-    color:$color1;
+.nav-link {
+    color: $color1;
 }
-.navbar-toggler-icon {   
+
+.navbar-toggler-icon {
     background-image: url(./Multimedia/ICONITO.png);
 }
+
 .navbar-toggler {
     background-color: $color1;
-    box-shadow:0 0 5px black;
+    box-shadow: 0 0 5px black;
 }
 
 .navbar-nav {
     position: relative;
     background-color: none;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     color: $color1;
     text-shadow: 0 0 5px black;
     font-weight: 900;
     transition: all 0.3s;
     font-size: 1.5em;
-}            
+}
+
 .nav-link:hover {
-    color:$color2;
-    transform: scale(1.2,1.2);
+    color: $color2;
+    transform: scale(1.2, 1.2);
     transition: all 0.5;
 }
+
 #actual {
-    color:$color5;
+    color: $color5;
 }
+
 /*Main*/
-.carousel-item{
+.carousel-item {
     height: 40vh;
     align-content: center;
     justify-content: center;
     justify-items: center;
 }
+
 .carEfecto {
-    font-size:1rem;
+    font-size: 1rem;
     text-shadow: 0 0 4px black;
 }
+
 #H3 {
-    font-size:2.5rem;
+    font-size: 2.5rem;
 }
+
 h1 {
-    text-align:center;
+    text-align: center;
     color: $color1;
     text-shadow: greenyellow 15px;
 }
+
 .section {
     margin: 2rem auto;
-    float:center;
+    float: center;
 }
-.sectionTitulo{
+
+.sectionTitulo {
     font-size: 22px;
     text-align: center;
     padding: 1rem;
     color: whitesmoke;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
+
 .sectionCuerpo {
     padding: 1rem;
-    color:$color1;
+    color: $color1;
     background-color: $color3;
     border-radius: 15px;
     font-weight: 600;
     text-shadow: 1px 1px black;
     text-align: center;
     align-items: center;
-    justify-content: space-around;      
+    justify-content: space-around;
 }
+
 .tecnologia {
     background-image: url(./Multimedia/MOther.jpg);
 
@@ -159,43 +180,53 @@ h1 {
     background-color: #000000;
     border-color: $color1;
 }
-.btn-dark:hover{
+
+.btn-dark:hover {
     color: yellow;
     background-color: black;
 }
-.btn-dark:visited{
+
+.btn-dark:visited {
     color: yellow;
     background-color: black;
 }
-.card{
-    background-color:rgba(0, 0, 0, 0);
+
+.card {
+    background-color: rgba(0, 0, 0, 0);
 }
-.foto{
-    width: 100%;    
+
+.foto {
+    width: 100%;
 }
+
 .registro {
     margin-top: 1rem;
     text-align: center;
 }
+
 .registro a {
     font-weight: 600;
     text-decoration: none;
     color: $color5;
     font-size: 100%;
 }
-.registro a:hover{
-    color:$color2;
+
+.registro a:hover {
+    color: $color2;
 }
-.construccion{
+
+.construccion {
     background-image: url(./Multimedia/construccion.jpg);
     background-size: 50vh;
     background-position: center;
 }
+
 /*footer*/
-.footer {   
+.footer {
     padding: 2rem;
-    background-color:$color4;
+    background-color: $color4;
 }
+
 .contactarOperador {
     background-color: $color3;
     font-size: 1.5rem;
@@ -205,113 +236,147 @@ h1 {
     border-radius: 20px;
     color: orangered;
 }
+
 .offcanvas {
-    color:$color1;
-    background-color:$color4;
+    color: $color1;
+    background-color: $color4;
 }
-.btn-close{
+
+.btn-close {
     transition: 2s;
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
     background-color: $color5;
 }
+
 .contactarOperadorBoton {
     font-size: 2rem;
     text-decoration: none;
     color: blue;
     cursor: pointer;
 }
-.contactarOperadorBoton:hover{
-    color:green;
+
+.contactarOperadorBoton:hover {
+    color: green;
 }
-.info{
+
+.info {
     color: whitesmoke;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 1rem;
-    h3 {
-        color:$color1;
+
+    & h3 {
+        color: $color1;
     }
 }
+
 .redes p {
-    color:$color5;
+    color: $color5;
 }
-.redesBoton{
-    display: block;
-    font-size: 50px;
-    color: $color1;
-}
-.fa-whatsapp{
+
+
+.fa-whatsapp {
     text-decoration: none;
     background-color: #3ec34f;
     padding: 0.5rem;
     color: white;
     font-size: 2rem;
     border-radius: 50%;
-    position:fixed;
+    position: fixed;
     bottom: 5%;
     right: 5%;
     box-shadow: 2px black;
     border: solid 1px white;
     transition: all 0.5s;
 }
+
 .fa-whatsapp:hover {
     font-size: 3rem;
     transition: all 0.5s;
 }
-.copyright{
+
+.copyright {
     font-size: 0.6rem;
     font-style: oblique;
     font-weight: 600;
-    position:sticky;
+    position: sticky;
     bottom: 0;
     text-align: center;
     color: $color1;
 }
-
+.collapse{
+    position:absolute
+}
+$redes: (
+	twitter: #51aff8,
+	facebook: blue,
+	linkedin: #0076b8,
+	youtube: red,
+    instagram: orange
+);
+@each $red, $color in $redes {
+    .red--#{$red} {
+        background: $color;
+        font-size:40px;
+        color:black;
+        &:hover {
+            background: white;
+            
+        }
+    }
+}
 /* MEDIAS Y DISEÑO RESPONSIVE*/
 
-@media only screen and (min-width: 1200px){
-    #tablaNote{
-        display:block;
+@media only screen and (min-width: 1200px) {
+    #tablaNote {
+        display: block;
     }
+
     .nav-link {
         font-size: 1.2;
         padding: 1px;
         margin: 1px;
     }
+
     .sectionTitulo {
         font-size: 40px;
     }
-    .sectionCuerpo{
-        font-size: 25px;    
+
+    .sectionCuerpo {
+        font-size: 25px;
     }
+
     .carEfecto {
-        font-size:2rem;
+        font-size: 2rem;
         background-color: rgba(245, 245, 220, 0.103);
         text-shadow: 0 0 4px black;
     }
-    #H3 {
-        font-size:5rem;
-    }
 
+    #H3 {
+        font-size: 5rem;
+    }
 }
 
-@media only screen and (max-width:600px){
-        
-        .sectionCuerpo {
-            display:block;
-        }
-        .info {
-            display:block;
-            text-align: center;
-        }
-        .carEfecto {
-            font-size:1rem;
-            background-color: rgba(245, 245, 220, 0.103);
-            text-shadow: 0 0 4px black;
-        }
-        #H3 {
-            font-size:1.4rem;
-        }
+@media only screen and (max-width: 600px) {
+    .sectionCuerpo {
+        display: block;
     }
+
+    .info {
+        display: block;
+        text-align: center;
+    }
+
+    .carEfecto {
+        font-size: 1rem;
+        background-color: rgba(245, 245, 220, 0.103);
+        text-shadow: 0 0 4px black;
+    }
+
+    #H3 {
+        font-size: 1.4rem;
+    }
+}
+
+
 
