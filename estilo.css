@@ -294,10 +294,6 @@ h1 {
   color: rgb(66, 201, 32);
 }
 
-.collapse {
-  position: absolute;
-}
-
 .red--twitter {
   background: #51aff8;
   font-size: 40px;
