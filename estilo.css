@@ -133,7 +133,10 @@ header {
 h1 {
   text-align: center;
   color: rgb(66, 201, 32);
-  text-shadow: greenyellow 15px;
+  text-shadow: 0 0 5px black;
+  background-color: rgba(136, 114, 114, 0.24);
+  height: 50px;
+  margin-top: 1rem;
 }
 
 .section {

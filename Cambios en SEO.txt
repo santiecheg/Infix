@@ -1,0 +1,5 @@
+a la class '.sectionCuerpo' le inclui un mixin para diferenciar el fondo y el estilo de la predisposición de los objetos dentro. Me va a servir para aplicar el mismo esitlo a todas las secciones sin que se apliquen el justify-content y el text-align...
+
+AGrego un mapa para crear mis redes sociales, asignandoles color tamañofondo y hover.
+
+En la parte del SEO ya actualice etiquetas METAcon keywords y description. Modifique la jerarquia de los titulos (la mayoria quedaron como h2 ahora) y agregue los titulos h1a todas las paginas.

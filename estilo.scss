@@ -140,8 +140,11 @@ header {
 
 h1 {
     text-align: center;
-    color: $color1;
-    text-shadow: greenyellow 15px;
+    color:$color1;
+    text-shadow: 0 0 5px black;
+    background-color: $color4;
+    height: 50px;
+    margin-top:1rem;
 }
 
 .section {
