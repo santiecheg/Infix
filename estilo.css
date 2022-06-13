@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("./Multimedia/gala888.jpg");
+  background-image: url(./Multimedia/gala888.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -134,14 +134,41 @@ h1 {
   text-align: center;
   color: rgb(66, 201, 32);
   text-shadow: 0 0 5px black;
-  background-color: rgba(136, 114, 114, 0.24);
   height: 50px;
   margin-top: 1rem;
 }
 
+.contenedor {
+  padding: 1rem;
+}
+
+section {
+  margin: 5rem auto;
+}
+
 .section {
-  margin: 2rem auto;
-  float: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.sectionimg1 {
+  background-image: url(./Multimedia/MOther.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.sectionimg2 {
+  background-image: url(./Multimedia/tecnologia.jpg);
+  background-position: center;
+}
+
+.sectionimg3 {
+  background-image: url(./Multimedia/call-center-CRM-estrategia.jpg);
+  background-position: center;
+}
+
+.sectionimg4 {
+  background-image: url(./Multimedia/construccion.jpg);
 }
 
 .sectionTitulo {
@@ -156,7 +183,6 @@ h1 {
   padding: 1rem;
   color: rgb(66, 201, 32);
   background-color: rgba(0, 0, 0, 0.785);
-  border-radius: 15px;
   font-weight: 600;
   text-shadow: 1px 1px black;
   text-align: center;
@@ -217,18 +243,23 @@ h1 {
 
 /*footer*/
 .footer {
-  padding: 2rem;
+  padding: 1rem;
   background-color: rgba(136, 114, 114, 0.24);
+  display: block;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .contactarOperador {
-  background-color: rgba(0, 0, 0, 0.785);
-  font-size: 1.5rem;
-  display: block;
+  height: 350px;
+  padding: auto;
+  display: flex;
   text-align: center;
-  border: double 3px whitesmoke;
-  border-radius: 20px;
-  color: orangered;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(./Multimedia/contactanos2.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .offcanvas {
@@ -253,11 +284,16 @@ h1 {
   color: green;
 }
 
+.card-body {
+  color: white;
+}
+
 .info {
   color: whitesmoke;
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 1rem;
+  align-items: center;
 }
 .info h3 {
   color: rgb(66, 201, 32);
@@ -265,6 +301,17 @@ h1 {
 
 .redes p {
   color: red;
+}
+
+.item {
+  padding: 1rem;
+}
+.item h3 {
+  color: white;
+}
+.item i {
+  color: rgb(127, 164, 233);
+  font-size: 4rem;
 }
 
 .fa-whatsapp {
@@ -295,6 +342,14 @@ h1 {
   bottom: 0;
   text-align: center;
   color: rgb(66, 201, 32);
+}
+
+.ayuda {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0 0 10px black;
+  font-family: roboto;
+  background-color: rgba(136, 114, 114, 0.24);
 }
 
 .red--twitter {
@@ -374,6 +429,10 @@ h1 {
 }
 @media only screen and (max-width: 600px) {
   .sectionCuerpo {
+    display: block;
+  }
+
+  .footer {
     display: block;
   }
 

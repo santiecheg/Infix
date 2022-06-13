@@ -5,6 +5,7 @@ $color2: rgb(127, 164, 233);
 $color3: rgb(0, 0, 0, 0.785);
 $color4: rgb(136, 114, 114, 0.24);
 $color5: red;
+$color6:white;
 
 //ESTILO//
 * {
@@ -13,7 +14,7 @@ $color5: red;
 }
 
 body {
-    background-image: url("./Multimedia/gala888.jpg");
+    background-image: url(./Multimedia/gala888.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -140,16 +141,44 @@ header {
 
 h1 {
     text-align: center;
-    color:$color1;
+    color: $color1;
     text-shadow: 0 0 5px black;
-    background-color: $color4;
+    //background-color: $color4;
     height: 50px;
-    margin-top:1rem;
+    margin-top: 1rem;
+}
+
+.contenedor {
+    padding: 1rem;
+}
+
+section {
+    margin: 5rem auto;
 }
 
 .section {
-    margin: 2rem auto;
-    float: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.sectionimg1 {
+    background-image: url(./Multimedia/MOther.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sectionimg2 {
+    background-image: url(./Multimedia/tecnologia.jpg);
+    background-position: center;
+}
+
+.sectionimg3 {
+    background-image: url(./Multimedia/call-center-CRM-estrategia.jpg);
+    background-position: center;
+}
+
+.sectionimg4 {
+    background-image: url(./Multimedia/construccion.jpg);
 }
 
 .sectionTitulo {
@@ -164,7 +193,6 @@ h1 {
     padding: 1rem;
     color: $color1;
     background-color: $color3;
-    border-radius: 15px;
     font-weight: 600;
     text-shadow: 1px 1px black;
     text-align: center;
@@ -226,18 +254,23 @@ h1 {
 
 /*footer*/
 .footer {
-    padding: 2rem;
+    padding: 1rem;
     background-color: $color4;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .contactarOperador {
-    background-color: $color3;
-    font-size: 1.5rem;
-    display: block;
+    height: 350px;
+    padding: auto;
+    display: flex;
     text-align: center;
-    border: double 3px whitesmoke;
-    border-radius: 20px;
-    color: orangered;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./Multimedia/contactanos2.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .offcanvas {
@@ -262,11 +295,16 @@ h1 {
     color: green;
 }
 
+.card-body {
+    color: $color6;
+}
+
 .info {
     color: whitesmoke;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 1rem;
+    align-items: center;
 
     & h3 {
         color: $color1;
@@ -277,6 +315,17 @@ h1 {
     color: $color5;
 }
 
+.item {
+    padding:1rem;
+    & h3 {
+        color: $color6;
+    }
+
+    & i {
+        color:$color2;
+        font-size: 4rem;
+    }
+}
 
 .fa-whatsapp {
     text-decoration: none;
@@ -307,24 +356,35 @@ h1 {
     text-align: center;
     color: $color1;
 }
-$redes: (
-	twitter: #51aff8,
-	facebook: blue,
-	linkedin: #0076b8,
-	youtube: red,
-    instagram: orange
-);
-@each $red, $color in $redes {
+
+.ayuda {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-family: roboto;
+    background-color: $color4;
+}
+
+$redes: (twitter: #51aff8,
+    facebook: blue,
+    linkedin: #0076b8,
+    youtube: red,
+    instagram: orange);
+
+@each $red,
+$color in $redes {
     .red--#{$red} {
         background: $color;
-        font-size:40px;
-        color:black;
+        font-size: 40px;
+        color: black;
+
         &:hover {
             background: white;
-            
+
         }
     }
 }
+
 /* MEDIAS Y DISEÑO RESPONSIVE*/
 
 @media only screen and (min-width: 1200px) {
@@ -362,6 +422,10 @@ $redes: (
         display: block;
     }
 
+    .footer {
+        display: block;
+    }
+
     .info {
         display: block;
         text-align: center;
@@ -377,6 +441,3 @@ $redes: (
         font-size: 1.4rem;
     }
 }
-
-
-
